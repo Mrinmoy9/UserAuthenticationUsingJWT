@@ -100,7 +100,7 @@ namespace UserLogin.Controllers
             return Ok(dbContext.Users.ToList());
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpGet]
         [Route("GetUserByID")]
         public IActionResult GetUserById(int id)
